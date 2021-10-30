@@ -1,0 +1,30 @@
+.button {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	align-items: center;
+	background-color: white;
+	gap: 0.4rem;
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	border: 1px solid #8080805b;
+	box-shadow: 0.1rem 0.1rem 0.1rem #8080805b;
+}
+.buttonText {
+	display: flex;
+	flex-direction: column;
+	/* overflow: hidden; */
+	align-items: center;
+	width: max-content;
+}
+.buttonText > * {
+	text-align: center;
+	width: max-content;
+	padding: 0;
+	margin: 0;
+}
+.button img,
+.button svg,
+.button i {
+	width: 1.4rem;
+}

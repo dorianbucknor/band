@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: max-content;
+	padding: 2rem;
+}
+.actionsContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+
+	padding: 1rem 0;
+	border-bottom: 1px solid grey;
+}
+.action {
+	width: max-content;
+	background-color: white;
+	padding: 0.8rem;
+	border-radius: 0.5rem;
+	border: 1px solid #8080805b;
+	box-shadow: 0.1rem 0.1rem 0.1rem #8080805b;
+}
+.stageList {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-flow: column;
+	width: 100%;
+	row-gap: 1rem;
+	column-gap: 1rem;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: max-content;
+	gap: 1rem;
+}
