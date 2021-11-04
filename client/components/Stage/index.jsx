@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import StageWindow from "../StageWindow";
+import StageWindow from "../BandWindow";
 import styles from "./index.module.css";
 
 export default function Stage({ sid, stage, getStage }) {

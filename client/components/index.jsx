@@ -1,3 +1,12 @@
 export { default as Button } from "./Button";
 export { default as Stage } from "./Stage";
 export { default as Stages } from "./Stages";
+export { default as Bands } from "./Bands";
+export { default as StageWindow } from "./BandWindow";
+export { default as BandWindow } from "./StageWindow";
+export { default as Band } from "./Band";
+export { default as Feed } from "./Feed";
+export { default as Chats } from "./Chats";
+export { default as Friends } from "./Friends";
+export { default as Settings } from "./Settings";
+export { default as StageViewer } from "./StageViewer";

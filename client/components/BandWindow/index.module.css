@@ -1,0 +1,46 @@
+.bottombar__btn {
+	border-radius: 0.5rem;
+	border: 1px solid #8080805b;
+	box-shadow: 0.1rem 0.1rem 0.1rem #8080805b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+.closeWindow {
+	cursor: pointer;
+}
+.window {
+	position: absolute;
+	width: 60vw;
+	height: 80vh;
+	z-index: 10;
+	background-color: rgba(255, 255, 255, 0.678);
+	border-radius: 0.5rem;
+	border: 1px solid #8080805b;
+	box-shadow: 0.1rem 0.1rem 0.1rem #8080805b;
+	flex-direction: column;
+	backdrop-filter: blur(6px);
+	align-items: center;
+	justify-content: space-between;
+	transform: translate(25%, -10%);
+}
+.topbar,
+.bottombar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+}
+.topbar {
+	justify-content: space-between;
+}
+.bottombar {
+	justify-content: flex-end;
+	gap: 1rem;
+}
+.main {
+	height: 20vh;
+}

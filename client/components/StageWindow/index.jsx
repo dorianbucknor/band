@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import io from "socket.io-client";
 
 export default function StageWindow({ stage, setStage }) {
 	const [windowOpen, setWindowOpen] = useState(false);
+	const router = useRouter();
+
 	const deleteStage = () => {};
 	const saveEdits = () => {};
 
@@ -20,7 +25,7 @@ export default function StageWindow({ stage, setStage }) {
 				<div
 					className={styles.closeWindow}
 					onClick={() => {
-						setStage(null);
+						if (typeof setStage === "function") setStage(null);
 					}}
 				>
 					<ion-icon name="close-circle"></ion-icon>
@@ -31,14 +36,23 @@ export default function StageWindow({ stage, setStage }) {
 				// onClick={(e) => e.stopPropagation()}
 			></div>
 			<div className={styles.bottombar}>
-				<div className={styles.bottombar__btn}>Open</div>
+				<Link href={`/app/stages?stage=${stage?.sid}`}>
+					<div
+						className={styles.bottombar__btn}
+						
+					>
+						Join
+					</div>
+				</Link>
 				<div className={styles.bottombar__btn}>
 					Edit || Save Changes
 				</div>
 				<div className={styles.bottombar__btn}>Delete</div>
 				<div
 					className={styles.bottombar__btn}
-					onClick={() => setStage(null)}
+					onClick={() => {
+						if (typeof setStage === "function") setStage(null);
+					}}
 				>
 					Cancel
 				</div>
